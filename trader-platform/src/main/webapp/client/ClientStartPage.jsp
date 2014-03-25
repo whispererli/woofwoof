@@ -71,25 +71,25 @@
 
 				<div class="row">
 					<div class="col-xs-6 col-sm-3 ">
-						<img src="../resources/download.jpg" class="img-responsive"
+						<img src="../img/download.jpg" class="img-responsive"
 							alt="Generic placeholder thumbnail">
 						<h4>商家1</h4>
 						<span class="text-muted">$100</span>
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="../resources/download.jpg" class="img-responsive"
+						<img src="../img/download.jpg" class="img-responsive"
 							alt="Generic placeholder thumbnail">
 						<h4>商家2</h4>
 						<span class="text-muted">$200</span>
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="../resources/download.jpg" class="img-responsive"
+						<img src="../img/download.jpg" class="img-responsive"
 							alt="Generic placeholder thumbnail">
 						<h4>商家3</h4>
 						<span class="text-muted">$300</span>
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="../resources/T1L5uwFvthXXb1upjX.jpg" class="thumbnail"
+						<img src="../img/T1L5uwFvthXXb1upjX.jpg" class="thumbnail"
 							alt="Generic placeholder thumbnail" style="height: 245px; width: 100%; display: block;">
 						
 						<h4>商家4</h4>
