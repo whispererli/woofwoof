@@ -38,7 +38,6 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#">欢迎，阿里巴巴</a></li>
-					<li><a href="#">个人信息</a></li>
 					<li><a href="#">购物车</a></li>
 					<li><a href="#">联系我们</a></li>
 				</ul>
@@ -53,51 +52,15 @@
 		<div class="row">
 			<div class="col-sm-3 col-md-2 sidebar">
 				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">首页</a></li>
-					<li><a href="ClientOrder.jsp">下单</a></li>
-					<li><a href="historyOrder.jsp">历史订单</a></li>
-					<li><a href="#">XXX</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">XXXXX XXXX</a></li>
-					<li><a href="">XXX XXX XXX</a></li>
-					<li><a href="">XX XXX XXXX</a></li>
-					<li><a href="">XXX XX XXX</a></li>
-					<li><a href="">XXX XX</a></li>
+	               <li><a href="ClientStartPage.jsp">我想下单</a></li>
+					<li><a href="agentStartPage.jsp">我想代购</a></li>
+					<li class="active"><a href="#">我的订单</a></li>
+					<li><a href="#">完善个人信息</a></li>
 				</ul>
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<h1 class="page-header">商家推荐</h1>
 
-				<div class="row">
-					<div class="col-xs-6 col-sm-3 ">
-						<img src="../img/download.jpg" class="img-responsive"
-							alt="Generic placeholder thumbnail">
-						<h4>商家1</h4>
-						<span class="text-muted">$100</span>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<img src="../img/download.jpg" class="img-responsive"
-							alt="Generic placeholder thumbnail">
-						<h4>商家2</h4>
-						<span class="text-muted">$200</span>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<img src="../img/download.jpg" class="img-responsive"
-							alt="Generic placeholder thumbnail">
-						<h4>商家3</h4>
-						<span class="text-muted">$300</span>
-					</div>
-					<div class="col-xs-6 col-sm-3">
-						<img src="../img/T1L5uwFvthXXb1upjX.jpg" class="thumbnail"
-							alt="Generic placeholder thumbnail" style="height: 245px; width: 100%; display: block;">
-						
-						<h4>商家4</h4>
-						<span class="text-muted">$250</span>
-					</div>
-				</div>
-
-				<h2 class="sub-header">订单一览</h2>
+				<h2 class="sub-header">历史订单一览</h2>
 				<div class="table-responsive">
 					<table class="table table-striped">
 						<thead>
@@ -105,8 +68,9 @@
 								<th>订单编号</th>
 								<th>代理名称</th>
 								<th>购入日期</th>
-								<th>最小费用</th>
-								<th>查询订单</th>
+								<th>订单价格</th>
+								<th>订单状态</th>
+								<th>操作</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -115,6 +79,7 @@
 								<td>Lorem</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -122,6 +87,7 @@
 								<td>amet</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -129,6 +95,7 @@
 								<td>Integer</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -136,6 +103,7 @@
 								<td>libero</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>取消</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -143,6 +111,7 @@
 								<td>dapibus</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>取消</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -150,6 +119,7 @@
 								<td>Nulla</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -157,6 +127,7 @@
 								<td>nibh</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -164,6 +135,7 @@
 								<td>sagittis</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -171,6 +143,7 @@
 								<td>Fusce</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 							<tr>
@@ -178,6 +151,7 @@
 								<td>augue</td>
 								<td>01/04/2014</td>
 								<td>$100</td>
+								<td>完成</td>
 								<td><input type="button" class = "button" value="查询"/></td>
 							</tr>
 						</tbody>

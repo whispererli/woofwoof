@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns:wb="http://open.weibo.com/wb">
+<html lang="en">
 <head>
 <title>平台入口</title>
 <meta charset="utf-8">
@@ -14,9 +14,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<link href="css/carousel.css" rel="stylesheet">
+<style id="holderjs-style" type="text/css"></style>
 
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js"
-	type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -38,61 +38,63 @@
 					<div class="form-group">
 						<input type="password" placeholder="Password" class="form-control">
 					</div>
-					<button type="submit" class="btn btn-success">Sign in</button>
+					<button id="login"  type="button" class="btn btn-success">登入</button>
+					<button id="regist" type="button" class="btn btn-fail">注册</button>
 				</form>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="jumbotron">
-		<div class="container">
-			<!-- body -->
-			<h1>平台入口</h1>
-			<div class="row">
-				<div class="col-md-6">
-					<button type="button" id="buyerEntrance"
-						class="btn btn-lg btn-primary">买家入口</button>
-				</div>
-				<div class="col-md-6">
-					<button type="button" id="agentEntrance"
-						class="btn btn-lg btn-primary">卖家入口</button>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<p>如果您是买家，请点击这里，我们将为您提供最优质的服务!</p>
-				</div>
-				<div class="col-md-6">
-					<p>如果您是卖家，请点击这里，我们会为您提供最简单的方式开始您的代购之旅</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<iframe class="youtube-player" type="text/html" width="320"
-						height="180" src="http://www.youtube.com/embed/VIDEO_ID"
-						allowfullscreen frameborder="0"> </iframe>
-				</div>
-				<div class="col-md-6">
-					<iframe class="youtube-player" type="text/html" width="320"
-						height="180" src="http://www.youtube.com/embed/VIDEO_ID"
-						allowfullscreen frameborder="0"> </iframe>
+	<p>
+	<h1>平台入口</h1>
+	</p>
+	<div id="carousel-example-generic" class="carousel slide"
+		data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0"
+				class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/20140326135807.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption"></div>
 				</div>
 			</div>
-			<!-- /body -->
+			<div class="item">
+				<img src="img/20140326135908.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/0140326135839.jpg" alt="">
+				<div class="container">
+					<div class="carousel-caption"></div>
+				</div>
+			</div>
 		</div>
-	</div>
 
+		<!-- Controls -->
+		<a class="left carousel-control" href="#carousel-example-generic"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span>
+		</a> <a class="right carousel-control" href="#carousel-example-generic"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</div>
 	<footer>
 		<div id="legal" class="row">
 			<div class="col-md-10"></div>
 			<div class="col-md-1">
 				<a href="http://forum.jquery.com/">新浪微博</a>
 			</div>
-			<div class="col-md-1">
-				<wb:follow-button uid="2991975565" type="red_1" width="67"
-					height="24"></wb:follow-button>
-			</div>
+			<div class="col-md-1"></div>
 		</div>
 		<div>
 			<p>
@@ -103,18 +105,21 @@
 	</footer>
 	<!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
 		$(document).ready(function() {
-			$('#buyerEntrance').click(function() {
-				window.open('client/ClientStartPage.jsp', '_self', false);
+			$('#login').click(function() {
+				window.open('common/ClientStartPage.jsp', '_self', false);
 			});
 		});
+	</script>
+	<script>
 		$(document).ready(function() {
-			$('#agentEntrance').click(function() {
-				window.open('agent/agent.jsp', '_self', false);
+			$('#regist').click(function() {
+				window.open('common/UserRegist.jsp', '_self', false);
 			});
 		});
 	</script>
